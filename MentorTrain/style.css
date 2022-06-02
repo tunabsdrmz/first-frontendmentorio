@@ -1,0 +1,108 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+#Div{
+    
+    background-color: hsl(216, 50%, 16%);
+    display: block;
+    width: 50%;
+    border-radius: 0.5em;
+    border: 1px solid hsl(216, 50%, 16%);
+}
+#Picture{
+    display: block;
+    position: relative;
+    background: url(images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+/*#Picture:hover{
+    background-image: url(images/icon-view.svg);
+    background-size: 3em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(178, 100%, 50%);*/
+    
+}
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(178, 100%, 50% , 0.3);
+    opacity: 0;
+}
+#overlay:hover{
+    opacity: 1;
+}
+#main{
+    position: relative;
+    height: 35vh;
+    width: 80%;
+}
+
+
+
+#Title{
+    color: hsl(0, 0%, 100%);
+    padding :2em;
+    font-weight: 700;
+}
+#Title:hover{
+    color: hsl(178, 100%, 50%);
+}
+#hoverAnim:hover{
+    color: hsl(178, 100%, 50%);
+}
+#hoverAnim{
+    color: hsl(0, 0%, 100%);
+}
+#LBL{
+    color: hsl(215, 51%, 70%);
+}
+#Price{
+    color: hsl(178, 100%, 50%);
+    padding-left: 1em;
+    padding-right: 3em;
+}
+@media (min-width:1000px){
+    #Price{
+        padding-right:10em;
+    }
+}
+#Price::before{
+    content: url(images/icon-ethereum.svg) ' ';
+    
+}
+#Remaining::before{
+    content: url(images/icon-clock.svg) ' ';
+    
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+#footer::before{
+    background-image: url(images/image-avatar.png);
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    content:"";
+    margin-right: 1em;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 1.5em ;
+     
+}
+
+
